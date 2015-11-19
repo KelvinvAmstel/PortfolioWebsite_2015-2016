@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'walkway_boldregular';
+    src: url('Walkway_Bold-webfont.ttf') format('truetype');
+
+}
+
+* {
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'walkway_boldregular';
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 1em 5em;
+    text-align: center;
+}
+
+h4 {
+    color: #FFF;
+    font-size: 1.3em;
+}
+
+p,
+time,
+span{
+    font-family: "Open Sans",Georgia;
+    line-height: 140%;
+    margin: .5em 0;
+}
+
+time,
+span {
+    font-style: italic;
+}
+
+header > nav {
+    background-color: #333;
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+
+}
+
+header > nav > ul {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: .5em;
+}
+
+header > nav > ul > li {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 140%;
+}
+
+header > nav > ul > li > a {
+    color: #FFF;
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 140%;
+}
+
+header > nav > ul > li > a:active {
+    background-color: #CECECE;
+}
+
+header > picture > img {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    margin: 0 auto;
+}
+
+main {
+    margin: 1em .5em;
+}
+
+.projecten {
+    margin: 4em .5em 2em .5em;
+}
+
+.projecten > article > article > section:nth-of-type(even){
+    background-color: #E8E8E8;
+}
+
+.projecten > article > article > section {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.projecten > article > article > section > header {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projecten > article > article > section > p {
+    text-align: center;
+    width: 80%;
+}
+
+.projecten > article > article > section > footer {
+    font-size: .9em;
+    text-align: center;
+    width: 80%;
+}
+
+.projecten > article > article > section > header > img {
+    height: 60%;
+    width: 60%;
+}
+
+.footer {
+    background-color: #333;
+}
+
+
+.footer > article {
+    padding: .5em 0.5em;
+}
+
+.footer > article > section > p,
+.footer > article > section > nav > ul > li > a {
+    color: #FFF;
+}
+
+/* Javascript hide/show navigation */
+.menu {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: flex-end;
+    margin: .5em;
+}
+
+.invisible {
+    display: none;
+}
+
+/**************************************************/
+/* Screen width with a minimal size of 768 pixels*/
+/**************************************************/
+@media (min-width: 768px){
+
+}
+
+/**************************************************/
+/* Screen width with a minimal size of 1024 pixels*/
+/**************************************************/
+@media (min-width: 1025px){
+
+    header > nav {
+        background-color: #fff;
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        justify-content: flex-end;
+        margin: 1em 0 0 0;
+    }
+
+    header > nav > ul {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        width: 33em;
+    }
+
+    header > nav > ul > li {
+        justify-content: space-around;
+    }
+
+    header > nav > ul > li > a {
+        background-color: #FFF;
+        color: #333;
+        padding: 0;
+        width: 100%;
+    }
+
+    header > nav > ul > li > a:hover {
+        color: #CCC;
+    }
+
+    main {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    main > article > header {
+        margin: 0 1em;
+    }
+
+    main > article > section{
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+
+    }
+
+    main > article > section > p {
+        margin: 0 1em;
+        width: 45vw;
+    }
+}
+
+/**************************************************/
+/* Screen width with a minimal size of 1280 pixels*/
+/**************************************************/
+@media (min-width: 1280px){
+
+}
+
+/**************************************************/
+/* Screen width with a minimal size of 1600 pixels*/
+/**************************************************/
+@media (min-width: 1600px){
+
+}
