@@ -37,6 +37,10 @@ span {
     font-style: italic;
 }
 
+span:last-of-type {
+    color: #FFF;
+}
+
 header > nav {
     background-color: #333;
     -webkit-display: box;
@@ -126,6 +130,20 @@ main {
     width: 80%;
 }
 
+.projecten > article > article > section > a {
+    background-color: #90C3D4;
+    color: #FFF;
+    height: 2em;
+    line-height: 200%;
+    margin: 1em 5em;
+    text-align: center;
+    width: 8em;
+}
+
+.projecten > article > article > section > a:active {
+    background-color: #5694A8;
+}
+
 .projecten > article > article > section > footer {
     font-size: .9em;
     text-align: center;
@@ -146,9 +164,36 @@ main {
     padding: .5em 0.5em;
 }
 
+.footer > article > section > header {
+    margin: 1em 0;
+}
+
+.footer > article > section > nav > ul > li > a,
+.footer > article > section > a {
+    margin: 0 2em;
+}
+
+.footer > article > section > a > img,
+.footer > article > section > nav > ul> li > a > img {
+    height: 3.2em;
+    width: 3.2em;
+}
+
+.footer > article > section > nav > ul > li > a:active{
+    color: #AAA;
+}
+.footer > article > section > a > img:active {
+    content:url("../img/linkedin_active.png");
+}
+
 .footer > article > section > p,
 .footer > article > section > nav > ul > li > a {
     color: #FFF;
+}
+
+#author {
+    font-size: 0.9em;
+    margin: 2em 0;
 }
 
 /* Javascript hide/show navigation */
