@@ -1,3 +1,12 @@
+/*****************************************************************/
+/* Author:              Kelvin van Amstel                        */
+/* File description:    This CSS is linked to all the HTML pages */
+/*                      Responsive portfolio website             */
+/*                      Mobile first                             */
+/* Created on:          14-11-2015                               */
+/* Finished on:         ??-??-????                               */
+/*****************************************************************/
+
 @font-face {
     font-family: 'walkway_boldregular';
     src: url('Walkway_Bold-webfont.ttf') format('truetype');
@@ -35,10 +44,6 @@ span{
 time,
 span {
     font-style: italic;
-}
-
-span:last-of-type {
-    color: #FFF;
 }
 
 header > nav {
@@ -191,7 +196,8 @@ main {
     color: #FFF;
 }
 
-#author {
+.author {
+    color: #FFF;
     font-size: 0.9em;
     margin: 2em 0;
 }
@@ -212,16 +218,9 @@ main {
 }
 
 /**************************************************/
-/* Screen width with a minimal size of 768 pixels*/
+/* Screen width with a minimal size of 768 pixels */
 /**************************************************/
 @media (min-width: 768px){
-
-}
-
-/**************************************************/
-/* Screen width with a minimal size of 1024 pixels*/
-/**************************************************/
-@media (min-width: 1025px){
 
     header > nav {
         background-color: #fff;
@@ -259,42 +258,88 @@ main {
         color: #CCC;
     }
 
-    main {
+    main,
+    .projecten {
+        margin: 2em;
+    }
+
+    main > article > section {
         -webkit-display: box;
         -moz-display: box;
         -ms-display: flexbox;
         display: flex;
-        justify-content: space-around;
-    }
-
-    main > article > header {
-        margin: 0 1em;
-    }
-
-    main > article > section{
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     main > article > section > p {
-        margin: 0 1em;
-        width: 45vw;
+        max-width: 40em;
+        width: 48%;
+    }
+
+    .projecten > article > article {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projecten > article > article > section {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        max-width: 30em;
+        width: 50%;
+    }
+
+    .projecten > article > article > section > header {
+    }
+
+    .projecten > article > article > section > header > h3 {}
+
+    .projecten > article > article > section > header > img {
+    }
+
+    .projecten > article > article > section > p {}
+
+    .projecten > article > article > section > a {}
+
+    .projecten > article > article > section > footer {}
+
+    .een {
+        order: 1;
+    }
+
+    .twee {
+        order: 0;
+    }
+
+    .drie {
+        order: 2;
+    }
+
+    .vier {
+        order: 3;
     }
 }
 
-/**************************************************/
-/* Screen width with a minimal size of 1280 pixels*/
-/**************************************************/
+/***************************************************/
+/* Screen width with a minimal size of 1280 pixels */
+/***************************************************/
 @media (min-width: 1280px){
 
 }
 
-/**************************************************/
-/* Screen width with a minimal size of 1600 pixels*/
-/**************************************************/
+/***************************************************/
+/* Screen width with a minimal size of 1600 pixels */
+/***************************************************/
 @media (min-width: 1600px){
 
 }
