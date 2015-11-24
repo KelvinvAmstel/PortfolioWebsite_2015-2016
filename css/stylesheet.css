@@ -52,6 +52,7 @@ header > nav {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
     width: 100vw;
 
@@ -62,7 +63,9 @@ header > nav > ul {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    -webkit-direction: column;
     flex-direction: column;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
     margin: .5em;
 }
@@ -72,6 +75,7 @@ header > nav > ul > li {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
     line-height: 140%;
 }
@@ -82,8 +86,12 @@ header > nav > ul > li > a {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    height: 2em;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
-    line-height: 140%;
+    line-height: 200%;
+    padding-right: 1em;
+    width: 98vw;
 }
 
 header > nav > ul > li > a:active {
@@ -102,22 +110,37 @@ main {
     margin: 1em .5em;
 }
 
+main > article > section > picture > img {
+    height: 80vw;
+    margin-left: -1em;
+    width: 100vw;
+}
+
 .projecten {
     margin: 4em .5em 2em .5em;
 }
 
-.projecten > article > article > section:nth-of-type(even){
-    background-color: #E8E8E8;
-}
-
 .projecten > article > article > section {
+    border-bottom: 1px solid #E8E8E8;
+    border-top: 1px solid #E8E8E8;
+    border-top-width: 80%;
     -webkit-display: box;
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: center;
     justify-content: center;
     margin: 2em 0;
+}
+
+.projecten > article > article > section:first-of-type {
+    border-bottom: none;
+}
+
+.projecten > article > article > section:last-of-type {
+    border-top: none;
 }
 
 .projecten > article > article > section > header {
@@ -125,7 +148,9 @@ main {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -187,6 +212,7 @@ main {
 .footer > article > section > nav > ul > li > a:active{
     color: #AAA;
 }
+
 .footer > article > section > a > img:active {
     content:url("../img/linkedin_active.png");
 }
@@ -209,6 +235,7 @@ main {
     -ms-display: flexbox;
     display: flex;
     font-size: 1.2em;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
     margin: .5em;
 }
@@ -222,42 +249,6 @@ main {
 /**************************************************/
 @media (min-width: 768px){
 
-    header > nav {
-        background-color: #fff;
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        justify-content: flex-end;
-        margin: 1em 0 0 0;
-    }
-
-    header > nav > ul {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 0;
-        width: 33em;
-    }
-
-    header > nav > ul > li {
-        justify-content: space-around;
-    }
-
-    header > nav > ul > li > a {
-        background-color: #FFF;
-        color: #333;
-        padding: 0;
-        width: 100%;
-    }
-
-    header > nav > ul > li > a:hover {
-        color: #CCC;
-    }
-
     main,
     .projecten {
         margin: 2em;
@@ -268,7 +259,9 @@ main {
         -moz-display: box;
         -ms-display: flexbox;
         display: flex;
+        -webkit-flex-direction: row;
         flex-direction: row;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
     }
 
@@ -277,14 +270,26 @@ main {
         width: 48%;
     }
 
+    main > article > section > picture > img {
+        height: 90%;
+        width: 90%
+    }
+
+    .projecten > article > header {
+        margin-bottom: 1em;
+    }
+
     .projecten > article > article {
         -webkit-display: box;
         -moz-display: box;
         -ms-display: flexbox;
         display: flex;
+        -webkit-flex-direction: row;
         flex-direction: row;
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
-        justify-content: space-around;
+        -webkit-justify-content: flex-start space-between;
+        justify-content: flex-start space-between;
     }
 
     .projecten > article > article > section {
@@ -292,41 +297,41 @@ main {
         -moz-display: box;
         -ms-display: flexbox;
         display: flex;
+        -webkit-flex-direction: row;
         flex-direction: row;
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
         margin: 0;
         max-width: 30em;
-        width: 50%;
+        width: 45%;
     }
 
-    .projecten > article > article > section > header {
+    .projecten > article > article > section:first-of-type {
+        border-bottom: 1px solid #E8E8E8;
     }
-
-    .projecten > article > article > section > header > h3 {}
-
-    .projecten > article > article > section > header > img {
-    }
-
-    .projecten > article > article > section > p {}
-
-    .projecten > article > article > section > a {}
-
-    .projecten > article > article > section > footer {}
 
     .een {
-        order: 1;
-    }
-
-    .twee {
         order: 0;
     }
 
+    .twee {
+        order: 1;
+    }
+
     .drie {
-        order: 2;
+        order: 3;
     }
 
     .vier {
-        order: 3;
+        order: 2;
+    }
+
+    .vijf {
+        order: 4;
+    }
+
+    .zes {
+        order: 5;
     }
 }
 
@@ -335,6 +340,110 @@ main {
 /***************************************************/
 @media (min-width: 1280px){
 
+    header > nav {
+        background-color: #fff;
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        margin: 1em 0 0 0;
+        width: 98vw;
+    }
+
+    header > nav > ul {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        margin: 0;
+        width: 33em;
+    }
+
+    header > nav > ul > li {
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+    }
+
+    header > nav > ul > li > a {
+        background-color: #FFF;
+        color: #333;
+        width: 100%;
+    }
+
+    header > nav > ul > li > a:hover {
+        color: #CCC;
+    }
+
+    header > nav > ul > li > a:active {
+        background-color: #FFF;
+    }
+
+    header > picture > img {
+        height: 45%;
+        width: 45%;
+    }
+
+    .projecten > article > article {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+    }
+
+    .projecten > article > article > section {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0;
+        max-width: 22em;
+        width: 40%;
+    }
+
+    .projecten > article > article > section > header > img {
+        width:  18em;
+    }
+
+    .projecten > article > article > section:last-of-type {
+        border-top: 1px solid #E8E8E8;
+    }
+
+    .een,
+    .twee,
+    .drie,
+    .vier,
+    .vijf,
+    .zes {
+        order: 0;
+    }
+
+    .projecten > article > article > section > a:hover {
+        background-color: #4593AD;
+    }
+
+    .footer > article > section > nav > ul > li > a:hover {
+        color: #CCC;
+    }
+
+    .footer > article > section > a > img:hover {
+        content:url("../img/linkedin_active.png");
+    }
 }
 
 /***************************************************/
