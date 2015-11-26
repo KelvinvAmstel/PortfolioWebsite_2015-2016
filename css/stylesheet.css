@@ -98,12 +98,14 @@ header > nav > ul > li > a:active {
     background-color: #CECECE;
 }
 
-header > picture > img {
+header > img {
     -webkit-display: box;
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    height: 100%;
     margin: 0 auto;
+    width: 100%;
 }
 
 main {
@@ -113,7 +115,7 @@ main {
 main > article > section > picture > img {
     height: 80vw;
     margin-left: -1em;
-    width: 100vw;
+    width: 98vw;
 }
 
 .projecten {
@@ -121,9 +123,7 @@ main > article > section > picture > img {
 }
 
 .projecten > article > article > section {
-    border-bottom: 1px solid #E8E8E8;
     border-top: 1px solid #E8E8E8;
-    border-top-width: 80%;
     -webkit-display: box;
     -moz-display: box;
     -ms-display: flexbox;
@@ -133,14 +133,6 @@ main > article > section > picture > img {
     -webkit-justify-content: center;
     justify-content: center;
     margin: 2em 0;
-}
-
-.projecten > article > article > section:first-of-type {
-    border-bottom: none;
-}
-
-.projecten > article > article > section:last-of-type {
-    border-top: none;
 }
 
 .projecten > article > article > section > header {
@@ -156,6 +148,7 @@ main > article > section > picture > img {
 }
 
 .projecten > article > article > section > p {
+    height: 6em;
     text-align: center;
     width: 80%;
 }
@@ -261,8 +254,8 @@ main > article > section > picture > img {
         display: flex;
         -webkit-flex-direction: row;
         flex-direction: row;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
     }
 
     main > article > section > p {
@@ -272,6 +265,7 @@ main > article > section > picture > img {
 
     main > article > section > picture > img {
         height: 90%;
+        max-width: 40em;
         width: 90%
     }
 
@@ -306,8 +300,8 @@ main > article > section > picture > img {
         width: 45%;
     }
 
-    .projecten > article > article > section:first-of-type {
-        border-bottom: 1px solid #E8E8E8;
+    .projecten > article > article > section > header > h3 {
+        height: 2.5em;
     }
 
     .een {
@@ -384,9 +378,8 @@ main > article > section > picture > img {
         background-color: #FFF;
     }
 
-    header > picture > img {
-        height: 45%;
-        width: 45%;
+    main > article > section > p {
+        min-width: 45%;
     }
 
     .projecten > article > article {
@@ -418,10 +411,6 @@ main > article > section > picture > img {
 
     .projecten > article > article > section > header > img {
         width:  18em;
-    }
-
-    .projecten > article > article > section:last-of-type {
-        border-top: 1px solid #E8E8E8;
     }
 
     .een,
