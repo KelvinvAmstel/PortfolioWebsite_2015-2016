@@ -17,6 +17,7 @@
     box-sizing: border-box;
     color: #333;
     font-family: 'walkway_boldregular';
+    line-height: 145%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -25,19 +26,20 @@
 
 h3 {
     margin: 1em 5em;
+    font-size:15pt;
     text-align: center;
 }
 
 h4 {
     color: #FFF;
-    font-size: 1.3em;
+    font-size:14pt;
 }
 
 p,
 time,
 span{
     font-family: "Open Sans",Georgia;
-    line-height: 140%;
+    font-size: 12pt;
     margin: .5em 0;
 }
 
@@ -148,7 +150,7 @@ main > article > section > picture > img {
 }
 
 .projecten > article > article > section > p {
-    height: 6em;
+    height: 8em;
     text-align: center;
     width: 80%;
 }
@@ -168,7 +170,6 @@ main > article > section > picture > img {
 }
 
 .projecten > article > article > section > footer {
-    font-size: .9em;
     text-align: center;
     width: 80%;
 }
@@ -191,11 +192,6 @@ main > article > section > picture > img {
     margin: 1em 0;
 }
 
-.footer > article > section > nav > ul > li > a,
-.footer > article > section > a {
-    margin: 0 2em;
-}
-
 .footer > article > section > a > img,
 .footer > article > section > nav > ul> li > a > img {
     height: 3.2em;
@@ -206,8 +202,12 @@ main > article > section > picture > img {
     color: #AAA;
 }
 
-.footer > article > section > a > img:active {
+.footer > article > section > a:first-of-type > img:active {
     content:url("../img/linkedin_active.png");
+}
+
+.footer > article > section > a:last-of-type > img:active {
+    content:url("../img/github_active.png");
 }
 
 .footer > article > section > p,
@@ -217,7 +217,6 @@ main > article > section > picture > img {
 
 .author {
     color: #FFF;
-    font-size: 0.9em;
     margin: 2em 0;
 }
 
@@ -227,7 +226,6 @@ main > article > section > picture > img {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
-    font-size: 1.2em;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
     margin: .5em;
@@ -426,18 +424,52 @@ main > article > section > picture > img {
         background-color: #4593AD;
     }
 
+    .footer {
+        height: 20em;
+    }
+
+    .footer > article {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    .footer > article > section {
+        border-left: 3px solid #AAA;
+        margin: 2em;
+    }
+
+    .footer > article > section:first-of-type {
+        border: none;
+        width: 35em;
+    }
+
+    .footer > article > section:last-of-type > header,
+    .footer > article > section:last-of-type > a,
+    .footer > article > section:last-of-type > p{
+        margin-left: 4em;
+    }
+
     .footer > article > section > nav > ul > li > a:hover {
         color: #CCC;
     }
 
-    .footer > article > section > a > img:hover {
+    .footer > article > section > a:last-of-type > img {
+        margin-left: -2em;
+    }
+
+    .footer > article > section > a:first-of-type > img:hover {
         content:url("../img/linkedin_active.png");
     }
-}
 
-/***************************************************/
-/* Screen width with a minimal size of 1600 pixels */
-/***************************************************/
-@media (min-width: 1600px){
-
+    .footer > article > section > a:last-of-type > img:hover {
+        content:url("../img/github_active.png");
+    }
 }
