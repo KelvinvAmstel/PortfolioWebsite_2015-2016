@@ -261,6 +261,11 @@ main > article > section > picture > img {
         width: 48%;
     }
 
+    main > article > section > blockquote {
+        max-width: 40em;
+        width: 48%;
+    }
+
     main > article > section > picture > img {
         height: 90%;
         max-width: 40em;
@@ -377,6 +382,10 @@ main > article > section > picture > img {
     }
 
     main > article > section > p {
+        min-width: 45%;
+    }
+
+    main > article > section > blockquote {
         min-width: 45%;
     }
 
