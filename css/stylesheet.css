@@ -120,6 +120,12 @@ main > article > section > picture > img {
     width: 98vw;
 }
 
+main#cv {
+    content:url("../img/cv.png");
+    height: 100%;
+    width: 98vw;
+}
+
 .projecten {
     margin: 4em .5em 2em .5em;
 }
