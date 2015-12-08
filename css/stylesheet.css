@@ -17,29 +17,39 @@
     box-sizing: border-box;
     color: #333;
     font-family: 'walkway_boldregular';
-    line-height: 145%;
+    line-height: 165%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
+h1 {
+    font-size: 20pt;
+}
+
+h2{
+    font-size: 18pt;
+    margin-top: 2em;
+}
+
 h3 {
     margin: 1em 5em;
-    font-size:15pt;
+    font-size:17pt;
     text-align: center;
 }
 
 h4 {
     color: #FFF;
-    font-size:14pt;
+    font-size:16pt;
 }
 
 p,
 time,
-span{
+span,
+a{
     font-family: "Open Sans",Georgia;
-    font-size: 12pt;
+    font-size: 16pt;
     margin: .5em 0;
 }
 
@@ -156,7 +166,7 @@ main#cv {
 }
 
 .projecten > article > article > section > p {
-    height: 8em;
+    height: 9em;
     text-align: center;
     width: 80%;
 }
@@ -178,6 +188,12 @@ main#cv {
 .projecten > article > article > section > footer {
     text-align: center;
     width: 80%;
+}
+
+.projecten > article > article > section > footer > p,
+.projecten > article > article > section > footer > p > span,
+.projecten > article > article > section > footer > p > time {
+    font-size: 12pt;
 }
 
 .projecten > article > article > section > header > img {
@@ -263,8 +279,7 @@ main#cv {
     }
 
     main > article > section > p {
-        max-width: 40em;
-        width: 48%;
+        max-width: 60em;
     }
 
     main > article > section > blockquote {
@@ -274,7 +289,6 @@ main#cv {
 
     main > article > section > picture > img {
         height: 90%;
-        max-width: 40em;
         width: 90%
     }
 
@@ -313,6 +327,12 @@ main#cv {
         height: 2.5em;
     }
 
+    .projecten > article > article > section > footer > p,
+    .projecten > article > article > section > footer > p > span,
+    .projecten > article > article > section > footer > p > time {
+        font-size: 14pt;
+    }
+
     .een {
         order: 0;
     }
@@ -327,21 +347,29 @@ main#cv {
 
     .vier {
         order: 2;
-    }
-
-    .vijf {
-        order: 4;
-    }
-
-    .zes {
-        order: 5;
-    }
 }
 
 /***************************************************/
 /* Screen width with a minimal size of 1280 pixels */
 /***************************************************/
 @media (min-width: 1280px){
+
+    p,
+    time,
+    span,
+    a {
+        font-size: 14pt;
+    }
+
+    main,
+    .projecten {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        margin: 0 auto;
+        width: 70vw;
+    }
 
     header > nav {
         background-color: #fff;
@@ -376,6 +404,7 @@ main#cv {
     header > nav > ul > li > a {
         background-color: #FFF;
         color: #333;
+        font-size: 12pt;
         width: 100%;
     }
 
@@ -437,6 +466,12 @@ main#cv {
 
     .projecten > article > article > section > a:hover {
         background-color: #4593AD;
+    }
+
+    .projecten > article > article > section > footer > p,
+    .projecten > article > article > section > footer > p > span,
+    .projecten > article > article > section > footer > p > time {
+        font-size: 16pt;
     }
 
     .footer {
