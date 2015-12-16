@@ -131,9 +131,13 @@ main > article > section > picture > img {
 }
 
 main#cv {
-    content:url("../img/cv.png");
+    display: flex;
+    justify-content: center;
+}
+
+main#cv > img {
+    width: 100vw;
     height: 100%;
-    width: 98vw;
 }
 
 .projecten {
@@ -422,6 +426,10 @@ main#cv {
 
     main > article > section > blockquote {
         min-width: 45%;
+    }
+
+    main#cv > img {
+        width: 80vw;
     }
 
     .projecten > article > article {
