@@ -7,350 +7,215 @@
 /* Finished on:         ??-??-????                               */
 /*****************************************************************/
 
-@font-face {
-    font-family: 'walkway_boldregular';
-    src: url('Walkway_Bold-webfont.ttf') format('truetype');
-
-}
-
 * {
     box-sizing: border-box;
     color: #333;
-    font-family: 'walkway_boldregular';
-    line-height: 165%;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 140%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-h1 {
-    font-size: 18pt;
+/* Text markup; size/wieght*/
+p{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 1.75em;
 }
 
 h2{
-    font-size: 18pt;
-    margin-top: 2em;
+    font-size: 1.5em;
 }
 
-h3 {
-    margin: 1em 5em;
-    font-size:17pt;
-    text-align: center;
+h3{
+    font-size: 1.125em;
+    font-weight: 500;
 }
 
-h4 {
-    color: #FFF;
-    font-size:16pt;
+h4{
+    font-size: 1em;
 }
 
-p,
-time,
-span,
-a{
-    font-family: "Open Sans",Georgia;
-    font-size: 14pt;
-    margin: .5em 0;
+h5{
+    font-size: 0.875em;
 }
 
-time,
-span {
-    font-style: italic;
+h6{
+    font-size: 0.75emm;
 }
 
-header > nav {
-    background-color: #333;
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
+/* Navigation */
+nav {
+    margin: 1em;
+    text-align: right;
+}
+
+nav > ul > li > a {
+    font-family: 'Signika';
+    font-size: 1.75em;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+/* Main section */
+main > section {
     display: flex;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    width: 100vw;
-
+    flex-wrap: nowrap;
+    margin: 1em 1em;
 }
 
-header > nav > ul {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
-    display: flex;
-    -webkit-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    margin: .5em;
+main > section > article:first-of-type {
+    height: 30vh;
+    margin-top: 10vh;
+    width: 80vw;
 }
 
-header > nav > ul > li {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
-    display: flex;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    line-height: 140%;
+main > section > article:last-of-type {
+    height: 30vh;
+    margin-left: -20vw;
+    width: 10vw;
 }
 
-header > nav > ul > li > a {
-    color: #FFF;
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
-    display: flex;
-    height: 2em;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    line-height: 200%;
-    padding-right: 1em;
-    width: 98vw;
+main > section > article:last-of-type > img {
+    bottom: 0;
+    height: 25vh;
+    position: fixed;
 }
 
-header > nav > ul > li > a:active {
-    background-color: #CECECE;
+/* Homepage section; class: .home_section*/
+.home_section {
+    background-color: #1b7867;
 }
 
-header > img {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
-    display: flex;
-    height: 100%;
-    margin: 0 auto;
-    width: 100%;
+.home_section > article {
+    color: #14ccaa;
+    height: 22vh;
+    margin: 3em 1em 0 1em;
+    width: 60vw;
 }
 
-main {
-    margin: 1em .5em;
+.home_section > article > h3,
+.home_section > article > p {
+    color: #14ccaa;
 }
 
-main > article > section > picture > img {
-    height: 80vw;
-    margin-left: -1em;
-    width: 98vw;
-}
-
-main#cv {
-    display: flex;
-    justify-content: center;
-}
-
-main#cv > img {
-    width: 100vw;
-    height: 100%;
-}
-
-.projecten {
-    margin: 4em .5em 2em .5em;
-}
-
-.projecten > article > article > section {
-    border-top: 1px solid #E8E8E8;
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-    justify-content: center;
-    margin: 2em 0;
-}
-
-.projecten > article > article > section > header {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.projecten > article > article > section > p {
-    height: 9em;
-    text-align: center;
-    width: 80%;
-}
-
-.projecten > article > article > section > a {
-    background-color: #90C3D4;
-    color: #FFF;
-    height: 2em;
-    line-height: 200%;
-    margin: 1em 5em;
-    text-align: center;
-    width: 8em;
-}
-
-.projecten > article > article > section > a:active {
-    background-color: #5694A8;
-}
-
-.projecten > article > article > section > footer {
-    text-align: center;
-    width: 80%;
-}
-
-.projecten > article > article > section > footer > p,
-.projecten > article > article > section > footer > p > span,
-.projecten > article > article > section > footer > p > time {
-    font-size: 12pt;
-}
-
-.projecten > article > article > section > header > img {
-    height: 60%;
-    width: 60%;
-}
-
-.footer {
-    background-color: #333;
-}
-
-
-.footer > article {
-    padding: .5em 0.5em;
-}
-
-.footer > article > section > header {
-    margin: 1em 0;
-}
-
-.footer > article > section > a > img,
-.footer > article > section > nav > ul> li > a > img {
-    height: 3.2em;
-    width: 3.2em;
-}
-
-.footer > article > section > nav > ul > li > a:active{
-    color: #AAA;
-}
-
-.footer > article > section > a:first-of-type > img:active {
-    content:url("../img/linkedin_active.png");
-}
-
-.footer > article > section > a:last-of-type > img:active {
-    content:url("../img/github_active.png");
-}
-
-.footer > article > section > p,
-.footer > article > section > nav > ul > li > a {
-    color: #FFF;
-}
-
-.author {
-    color: #FFF;
-    margin: 2em 0;
-}
-
-/* Javascript hide/show navigation */
-.menu {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
-    display: flex;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    margin: .5em;
-}
-
+/* Mobile toggle menu */
 .invisible {
     display: none;
 }
 
 /**************************************************/
+/* Screen width with a minimal size of 480 pixels */
+/* Portrait view of smartphones;                  */
+/**************************************************/
+@media (min-width: 480px){
+
+    /* Navigation */
+    nav > ul > li > a {
+        font-size: 1.5em;
+    }
+
+    /* Main section */
+    main > section > article:first-of-type {
+        width: 70vw;
+    }
+
+    main > section > article:last-of-type {
+        margin-left: 0;
+    }
+
+    main > section > article:last-of-type > img {
+        height: 45vh;
+    }
+
+    /* Homepage section; class: .home_section*/
+    .home_section > article {
+        height: 30vh;
+    }
+
+}
+
+/**************************************************/
 /* Screen width with a minimal size of 768 pixels */
+/* Portrait view of tablets like; iPad, sony etc. */
 /**************************************************/
 @media (min-width: 768px){
 
-    main,
-    .projecten {
-        margin: 2em;
+    /* Text markup; size/wieght*/
+    p{
+        font-size: 1.375em;
     }
 
-    main > article > section {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
+    h1{
+        font-size: 3em;
     }
 
-    main > article > section > p {
-        max-width: 60em;
+    h2{
+        font-size: 2.5em;
     }
 
-    main > article > section > blockquote {
-        max-width: 40em;
-        width: 48%;
+    h3{
+        font-size: 2.25em;
     }
 
-    main > article > section > picture > img {
-        height: 90%;
-        width: 90%
+    h4{
+        font-size: 1.875em;
     }
 
-    .projecten > article > header {
-        margin-bottom: 1em;
+    h5{
+        font-size: 1.625em;
     }
 
-    .projecten > article > article {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-justify-content: flex-start space-between;
-        justify-content: flex-start space-between;
+    h6{
+        font-size: 1.25em;
     }
 
-    .projecten > article > article > section {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin: 0;
-        max-width: 30em;
-        width: 45%;
+    /* Navigation */
+    nav > ul > li > a {
+        font-size: 3em;
     }
 
-    .projecten > article > article > section > header > h3 {
-        height: 2.5em;
+    /* Main section */
+
+    main > section > article:last-of-type {
+        margin-left: -10vw;
     }
 
-    .projecten > article > article > section > footer > p,
-    .projecten > article > article > section > footer > p > span,
-    .projecten > article > article > section > footer > p > time {
-        font-size: 14pt;
+    main > section > article:last-of-type > img {
+        height: 35vh;
     }
 
-    .een {
-        order: 0;
+    /* Homepage section; class: .home_section*/
+    .home_section > article {
+        height: 21vh;
     }
 
-    .twee {
-        order: 1;
+}
+
+/***************************************************/
+/* Screen width with a minimal size of 1024 pixels */
+/* Landscape view of tablets like; iPad, sony etc. */
+/***************************************************/
+@media (min-width: 1024px){
+
+    /* Main section */
+    main > section > article:first-of-type {
+        width: 60vw;
     }
 
-    .drie {
-        order: 3;
+    main > section > article:last-of-type {
+        margin-left: 10vw;
+    }
+    main > section > article:last-of-type > img {
+        height: 45vh;
     }
 
-    .vier {
-        order: 2;
 }
 
 /***************************************************/
@@ -358,176 +223,94 @@ main#cv > img {
 /***************************************************/
 @media (min-width: 1280px){
 
-    p,
-    time,
-    span,
-    a {
-        font-size: 14pt;
+    /* Text markup; size/wieght*/
+    p{
+        font-size: 1.125em;
     }
 
-    main,
-    .projecten {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    h3{
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+
+    h4{
+        font-size: 1.875em;
+    }
+
+    h5{
+        font-size: 1.625em;
+    }
+
+    h6{
+        font-size: 1.25em;
+    }
+
+    /* Body */
+    body{
         display: flex;
-        margin: 0 auto;
-        width: 70vw;
-    }
-
-    header > nav {
-        background-color: #fff;
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-justify-content: flex-end;
-        justify-content: flex-end;
-        margin: 1em 0 0 0;
-        width: 98vw;
-    }
-
-    header > nav > ul {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-        margin: 0;
-        width: 33em;
-    }
-
-    header > nav > ul > li {
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-    }
-
-    header > nav > ul > li > a {
-        background-color: #FFF;
-        color: #333;
-        font-size: 12pt;
-        width: 100%;
-    }
-
-    header > nav > ul > li > a:hover {
-        color: #CCC;
-    }
-
-    header > nav > ul > li > a:active {
-        background-color: #FFF;
-    }
-
-    main > article > section > p {
-        min-width: 45%;
-    }
-
-    main > article > section > blockquote {
-        min-width: 45%;
-    }
-
-    main#cv > img {
-        width: 80vw;
-    }
-
-    .projecten > article > article {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
     }
 
-    .projecten > article > article > section {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
+    /* Header */
+    header {
+        height: 40vh;
+        order: 1;
+        width: 68vw;
+    }
+
+    /* Main section */
+    main {
         display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin: 0;
-        max-width: 30em;
-        width: 40%;
+        height: 50vh;
+        margin-left: 31vw;
+        margin-top: -50vh;
+        order: 2;
+        width: 68vw;
     }
 
-    .projecten > article > article > section > header > img {
-        width:  18em;
+    main > section > article:first-of-type {
+        height: 30vh;
+        width: 38vw;
     }
 
-    .een,
-    .twee,
-    .drie,
-    .vier,
-    .vijf,
-    .zes {
-        order: 0;
+    main > section > article:last-of-type {
+        height: 30vh;
+        margin-left: 10vw;
+        width: 10vw;
     }
 
-    .projecten > article > article > section > a:hover {
-        background-color: #4593AD;
+    main > section > article:last-of-type > img {
+        bottom: 0;
+        height: 20vw;
+        position: fixed;
+}
+
+    /* Homepage section; class: .home_section*/
+    .home_section {
+        background-color: #1b7867;
+        height: 100vh;
+        width: 30vw;
     }
 
-    .projecten > article > article > section > footer > p,
-    .projecten > article > article > section > footer > p > span,
-    .projecten > article > article > section > footer > p > time {
-        font-size: 12pt;
+    .home_section > article {
+        color: #14ccaa;
+        height: 22vh;
+        margin: 25vw 1em 0 1em;
+        width: 27vw;
     }
 
-    .footer {
-        height: 20em;
+    .home_section > article > h3,
+    .home_section > article > p {
+        color: #14ccaa;
+        text-align: right;
     }
 
-    .footer > article {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
-    }
-
-    .footer > article > section {
-        border-left: 3px solid #AAA;
-        margin: 2em;
-    }
-
-    .footer > article > section:first-of-type {
-        border: none;
-        width: 35em;
-    }
-
-    .footer > article > section:last-of-type > header,
-    .footer > article > section:last-of-type > a,
-    .footer > article > section:last-of-type > p{
-        margin-left: 4em;
-    }
-
-    .footer > article > section > nav > ul > li > a:hover {
-        color: #CCC;
-    }
-
-    .footer > article > section > a:last-of-type > img {
-        margin-left: -2em;
-    }
-
-    .footer > article > section > a:first-of-type > img:hover {
-        content:url("../img/linkedin_active.png");
-    }
-
-    .footer > article > section > a:last-of-type > img:hover {
-        content:url("../img/github_active.png");
-    }
 }
