@@ -21,7 +21,7 @@
 
 /* Text markup; size/wieght*/
 p{
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 300;
 }
 
@@ -30,11 +30,11 @@ h1{
 }
 
 h2{
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 h3{
-    font-size: 1.125em;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
@@ -58,7 +58,7 @@ nav {
 
 nav > ul > li > a {
     font-family: 'Signika';
-    font-size: 1.75em;
+    font-size: 2.5em;
     font-weight: 400;
     line-height: 100%;
 }
@@ -71,20 +71,20 @@ main > section {
 }
 
 main > section > article:first-of-type {
-    height: 30vh;
+    height: 9em;
     margin-top: 10vh;
-    width: 80vw;
+    width: 60vw;
 }
 
 main > section > article:last-of-type {
     height: 30vh;
-    margin-left: -20vw;
+    margin-left: -7vw;
     width: 10vw;
 }
 
 main > section > article:last-of-type > img {
     bottom: 0;
-    height: 25vh;
+    height: 35vh;
     position: fixed;
 }
 
@@ -96,8 +96,8 @@ main > section > article:last-of-type > img {
 .home_section > article {
     color: #14ccaa;
     height: 22vh;
-    margin: 3em 1em 0 1em;
-    width: 60vw;
+    margin: 4em 1em 0 1em;
+    width: 50vw;
 }
 
 .home_section > article > h3,
@@ -264,6 +264,18 @@ main > section > article:last-of-type > img {
         height: 40vh;
         order: 1;
         width: 68vw;
+    }
+
+    /* Navigation */
+    nav > ul > li > a {
+        font-size: 3.5em;
+        transition: all .5s ;
+    }
+
+    nav > ul > li > a:hover {
+        font-size: 4em;
+        line-height: 150%;
+        transition: all .5s ;
     }
 
     /* Main section */
