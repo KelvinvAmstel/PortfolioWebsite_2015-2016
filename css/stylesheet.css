@@ -47,16 +47,16 @@ h5{
 }
 
 h6{
-    font-size: 0.75emm;
+    font-size: 0.75em;
 }
 
 /* Navigation */
-nav {
+nav.index {
     margin: 1em;
     text-align: right;
 }
 
-nav > ul > li > a {
+nav.index > ul > li > a {
     font-family: 'Signika';
     font-size: 2.5em;
     font-weight: 400;
@@ -105,9 +105,50 @@ main > section > article:last-of-type > img {
     color: #14ccaa;
 }
 
+/* My work */
+section.work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
+}
+
+section.work > article {
+    margin: 1em;
+    width: 22em;
+}
+
+section.work > article > p {
+    background-color: rgb(27, 120, 103);
+    color: #FFFFFF;
+    display: block;
+    height: 30vh;
+    margin-top: -31vh;
+    opacity: 0;
+    position:relative;
+    transition: opacity .5s;
+    width: 19,5em;
+}
+
+section.work > article > img {
+    height: 30vh;
+    width: 22em;
+}
+
+section.work > article:hover > p {
+    opacity: .7;
+    transition: opacity .5s;
+}
+
 /* Mobile toggle menu */
 .invisible {
     display: none;
+}
+
+/* Active class */
+.active {
+    border-bottom: 3px solid #14ccaa;
 }
 
 /**************************************************/
@@ -117,7 +158,7 @@ main > section > article:last-of-type > img {
 @media (min-width: 480px){
 
     /* Navigation */
-    nav > ul > li > a {
+    nav.index > ul > li > a {
         font-size: 1.5em;
     }
 
@@ -177,7 +218,7 @@ main > section > article:last-of-type > img {
     }
 
     /* Navigation */
-    nav > ul > li > a {
+    nav.index > ul > li > a {
         font-size: 3em;
     }
 
@@ -212,6 +253,7 @@ main > section > article:last-of-type > img {
     main > section > article:last-of-type {
         margin-left: 10vw;
     }
+
     main > section > article:last-of-type > img {
         height: 45vh;
     }
@@ -266,16 +308,29 @@ main > section > article:last-of-type > img {
         width: 68vw;
     }
 
-    /* Navigation */
-    nav > ul > li > a {
+    /* Navigation index*/
+    nav.index > ul > li > a {
         font-size: 3.5em;
         transition: all .5s ;
     }
 
-    nav > ul > li > a:hover {
+    nav.index > ul > li > a:hover {
         font-size: 4em;
         line-height: 150%;
         transition: all .5s ;
+    }
+
+    /* Navigation all */
+    nav.all {
+        background-color: #1b7867;
+    }
+
+    nav.all > ul > li {
+        display: flex;
+    }
+
+    nav.all > ul > li > a {
+        color: #FFFFFF;
     }
 
     /* Main section */
@@ -324,5 +379,4 @@ main > section > article:last-of-type > img {
         color: #14ccaa;
         text-align: right;
     }
-
 }
