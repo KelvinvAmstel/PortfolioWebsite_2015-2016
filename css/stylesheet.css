@@ -70,6 +70,9 @@ nav.all {
 }
 
 nav.all > ul > li {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
     display: flex;
     justify-content: flex-end;
 }
@@ -87,6 +90,9 @@ nav.all > ul > li > a:active {
 
 /* Main section */
 main > section {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
     display: flex;
     flex-wrap: nowrap;
     margin: 1em 1em;
@@ -129,6 +135,9 @@ main > section > article:last-of-type > img {
 
 /* My work */
 section.work {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -320,6 +329,9 @@ nav.all> ul > li > a.active {
 
     /* Body */
     body{
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
         display: flex;
         flex-wrap: wrap;
     }
@@ -350,6 +362,9 @@ nav.all> ul > li > a.active {
     }
 
     nav.all > ul {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
@@ -357,6 +372,9 @@ nav.all> ul > li > a.active {
     }
 
     nav.all > ul > li {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
         display: flex;
         justify-content: flex-end;
         margin-top: 1em;
@@ -375,6 +393,9 @@ nav.all> ul > li > a.active {
 
     /* Main section */
     main {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
         display: flex;
         height: 50vh;
         margin-left: 31vw;
