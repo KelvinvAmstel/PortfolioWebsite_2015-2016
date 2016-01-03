@@ -74,6 +74,9 @@ nav.all > ul > li {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
     justify-content: flex-end;
 }
 
@@ -94,6 +97,9 @@ main > section {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     margin: 1em 1em;
 }
@@ -139,8 +145,17 @@ section.work {
     -moz-display: box;
     -ms-display: flexbox;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
     order: 2;
 }
@@ -333,6 +348,9 @@ nav.all> ul > li > a.active {
         -moz-display: box;
         -ms-display: flexbox;
         display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -366,7 +384,13 @@ nav.all> ul > li > a.active {
         -moz-display: box;
         -ms-display: flexbox;
         display: flex;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
         justify-content: flex-end;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
         margin-right: 7em;
     }
@@ -376,6 +400,9 @@ nav.all> ul > li > a.active {
         -moz-display: box;
         -ms-display: flexbox;
         display: flex;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
         justify-content: flex-end;
         margin-top: 1em;
     }
