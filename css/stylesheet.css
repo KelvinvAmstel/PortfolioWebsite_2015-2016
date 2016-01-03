@@ -50,7 +50,7 @@ h6{
     font-size: 0.75em;
 }
 
-/* Navigation */
+/* Navigation index*/
 nav.index {
     margin: 1em;
     text-align: right;
@@ -61,6 +61,28 @@ nav.index > ul > li > a {
     font-size: 2.5em;
     font-weight: 400;
     line-height: 100%;
+}
+
+/* Navigation all */
+nav.all {
+    background-color: #1b7867;
+    width: 100%;
+}
+
+nav.all > ul > li {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav.all > ul > li > a {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-right: 1em;
+}
+
+nav.all > ul > li > a:active {
+    border-bottom: 3px solid #14ccaa;
 }
 
 /* Main section */
@@ -115,30 +137,24 @@ section.work {
 }
 
 section.work > article {
-    margin: 1em;
-    width: 22em;
+    margin: .5em;
+    width: 300px;
 }
 
 section.work > article > p {
     background-color: rgb(27, 120, 103);
     color: #FFFFFF;
     display: block;
-    height: 30vh;
-    margin-top: -31vh;
-    opacity: 0;
+    height: 12vh;
+    margin-top: -13vh;
+    opacity: .7;
     position:relative;
-    transition: opacity .5s;
-    width: 100%;
+    width: 300px;
 }
 
 section.work > article > img {
-    height: 30vh;
-    width: 22em;
-}
-
-section.work > article:hover > p {
-    opacity: .7;
-    transition: opacity .5s;
+    height: 192px;
+    width: 300px;
 }
 
 /* Mobile toggle menu */
@@ -147,8 +163,9 @@ section.work > article:hover > p {
 }
 
 /* Active class */
-.active {
+nav.all> ul > li > a.active {
     border-bottom: 3px solid #14ccaa;
+    font-weight: 300;
 }
 
 /**************************************************/
@@ -237,6 +254,12 @@ section.work > article:hover > p {
         height: 21vh;
     }
 
+    /* My work */
+    section.work > article > p {
+        height: 8.5vh;
+        margin-top: -9vh;
+    }
+
 }
 
 /***************************************************/
@@ -303,7 +326,6 @@ section.work > article:hover > p {
 
     /* Header */
     header {
-        height: 40vh;
         order: 1;
         width: 68vw;
     }
@@ -323,14 +345,32 @@ section.work > article:hover > p {
     /* Navigation all */
     nav.all {
         background-color: #1b7867;
+        height: 4em;
+        width: 100vw;
+    }
+
+    nav.all > ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        margin-right: 7em;
     }
 
     nav.all > ul > li {
         display: flex;
+        justify-content: flex-end;
+        margin-top: 1em;
     }
 
     nav.all > ul > li > a {
         color: #FFFFFF;
+        font-size: 1.25em;
+        margin-right: 1em;
+        width: 100%;
+    }
+
+    nav.all > ul > li > a:hover {
+        border-bottom: 3px solid #14ccaa;
     }
 
     /* Main section */
@@ -378,5 +418,27 @@ section.work > article:hover > p {
     .home_section > article > p {
         color: #14ccaa;
         text-align: right;
+    }
+
+    /* My work */
+    section.work > article {
+        margin: 1em;
+        width: 320px;
+    }
+
+    section.work > article > p {
+        height: 192px;
+        margin-top: -198px;
+        opacity: 0;
+        width: 320px;
+    }
+
+    section.work > article > img {
+        width: 320px;
+    }
+
+    section.work > article:hover > p {
+        opacity: .7;
+        transition: opacity .5s;
     }
 }
