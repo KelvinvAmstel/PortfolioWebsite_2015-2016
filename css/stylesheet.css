@@ -188,6 +188,12 @@ section.work > article > img {
     width: 30vw;
 }
 
+/* CV page, picture settings */
+section.work > img {
+    height: 100%;
+    width: 100%
+}
+
 /* Mobile toggle menu */
 .invisible {
     display: none;
@@ -503,5 +509,12 @@ nav.all> ul > li > a.active {
     section.work > article:hover > p {
         opacity: .7;
         transition: opacity .5s;
+    }
+
+    /* CV page, picture settings */
+    section.work > img {
+        height: 70%;
+        margin-top: 1em;
+        width: 70%;
     }
 }
