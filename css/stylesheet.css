@@ -30,7 +30,11 @@ h1{
 }
 
 h2{
-    font-size: 1.6em;
+    font-family: 'Signika';
+    font-size: 2em;
+    padding-right: 1em;
+    text-align: right;
+    width: 100vw;
 }
 
 h3{
@@ -162,7 +166,8 @@ section.work {
 
 section.work > article {
     margin: .5em;
-    width: 300px;
+    min-width: 300px;
+    width: 30vw;
 }
 
 section.work > article > p {
@@ -173,12 +178,14 @@ section.work > article > p {
     margin-top: -13vh;
     opacity: .7;
     position:relative;
-    width: 300px;
+    min-width: 300px;
+    width: 30vw;
 }
 
 section.work > article > img {
     height: 192px;
-    width: 300px;
+    min-width: 300px;
+    width: 30vw;
 }
 
 /* Mobile toggle menu */
@@ -190,6 +197,15 @@ section.work > article > img {
 nav.all> ul > li > a.active {
     border-bottom: 3px solid #14ccaa;
     font-weight: 300;
+}
+
+/* Toggle Menu */
+.menu {
+    font-size: 1.4em;
+    margin: 0 auto;
+    padding-right: 1.5em;
+    text-align: right;
+    width: 100vw;
 }
 
 /**************************************************/
@@ -305,6 +321,52 @@ nav.all> ul > li > a.active {
         height: 45vh;
     }
 
+    /* Navigation all */
+    nav.all {
+        background-color: #1b7867;
+        height: 4em;
+        width: 100vw;
+    }
+
+    nav.all > ul {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        justify-content: flex-end;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 98vw;
+    }
+
+    nav.all > ul > li {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        justify-content: flex-end;
+        margin-top: 1em;
+    }
+
+    nav.all > ul > li > a {
+        color: #FFFFFF;
+        font-size: 1.25em;
+        margin-right: 1em;
+        width: 100%;
+    }
+
+    nav.all > ul > li > a:hover {
+        border-bottom: 3px solid #14ccaa;
+    }
+
 }
 
 /***************************************************/
@@ -323,6 +385,7 @@ nav.all> ul > li > a.active {
 
     h2{
         font-size: 3em;
+        margin-top: 1em;
     }
 
     h3{
@@ -370,52 +433,6 @@ nav.all> ul > li > a.active {
         font-size: 4em;
         line-height: 150%;
         transition: all .5s ;
-    }
-
-    /* Navigation all */
-    nav.all {
-        background-color: #1b7867;
-        height: 4em;
-        width: 100vw;
-    }
-
-    nav.all > ul {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-justify-content: flex-end;
-        -moz-justify-content: flex-end;
-        -ms-justify-content: flex-end;
-        justify-content: flex-end;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        margin-right: 7em;
-    }
-
-    nav.all > ul > li {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
-        display: flex;
-        -webkit-justify-content: flex-end;
-        -moz-justify-content: flex-end;
-        -ms-justify-content: flex-end;
-        justify-content: flex-end;
-        margin-top: 1em;
-    }
-
-    nav.all > ul > li > a {
-        color: #FFFFFF;
-        font-size: 1.25em;
-        margin-right: 1em;
-        width: 100%;
-    }
-
-    nav.all > ul > li > a:hover {
-        border-bottom: 3px solid #14ccaa;
     }
 
     /* Main section */
@@ -471,18 +488,16 @@ nav.all> ul > li > a.active {
     /* My work */
     section.work > article {
         margin: 1em;
-        width: 320px;
     }
 
     section.work > article > p {
-        height: 192px;
-        margin-top: -198px;
+        height: 32vh;
+        margin-top: -32.7vh;
         opacity: 0;
-        width: 320px;
     }
 
     section.work > article > img {
-        width: 320px;
+        height: 32vh;
     }
 
     section.work > article:hover > p {
