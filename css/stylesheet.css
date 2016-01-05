@@ -191,7 +191,7 @@ section.work > article > img {
 /* CV page, picture settings */
 section.work > img {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 /* Mobile toggle menu */
@@ -212,6 +212,12 @@ nav.all> ul > li > a.active {
     padding-right: 1.5em;
     text-align: right;
     width: 100vw;
+}
+
+/* Get in touch images */
+section.work > article.connect > img {
+    height: 80px;
+    width: 80px;
 }
 
 /**************************************************/
