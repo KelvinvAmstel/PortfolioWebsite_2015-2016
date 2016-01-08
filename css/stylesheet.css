@@ -236,13 +236,18 @@ section.work > article.connect {
 }
 
 article.connect > a > img {
-    content: url("../img/Linkedin4.png");
     margin-top: 1em;
     width: 60vw;
 }
 
-article.connect > a > img:active {
-    content: url("../img/Linkedin3.png");
+ article.connect > a > img#gi {
+    margin-top: 1em;
+    width: 60vw;
+}
+
+article.connect > a > img#ma {
+    margin-top: 1em;
+    width: 60vw;
 }
 
 /**************************************************/
@@ -569,12 +574,15 @@ article.connect > a > img:active {
         width: 30vw;
     }
 
-    article.connect > a > img {
-        content: url("../img/Linkedin4.png");
+    article.connect > a > img#li {
         width: 26vw;
     }
 
-    article.connect > a > img:hover {
-        content: url("../img/Linkedin3.png");
+    article.connect > a > img#gi {
+        width: 26vw;
+    }
+
+    article.connect > a > img#ma {
+        width: 26vw;
     }
 }
