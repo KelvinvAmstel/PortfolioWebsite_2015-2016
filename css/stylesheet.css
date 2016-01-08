@@ -161,6 +161,7 @@ section.work {
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
+    margin: 0;
     order: 2;
 }
 
@@ -214,10 +215,34 @@ nav.all> ul > li > a.active {
     width: 100vw;
 }
 
-/* Get in touch images */
-section.work > article.connect > img {
-    height: 80px;
-    width: 80px;
+section.work > article.connect {
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+article.connect > a > img {
+    content: url("../img/Linkedin4.png");
+    margin-top: 1em;
+    width: 60vw;
+}
+
+article.connect > a > img:active {
+    content: url("../img/Linkedin3.png");
 }
 
 /**************************************************/
@@ -372,7 +397,6 @@ section.work > article.connect > img {
         color: #FFFFFF;
         font-size: 1.25em;
         margin-right: 1em;
-        width: 100%;
     }
 
     nav.all > ul > li > a:hover {
@@ -487,7 +511,7 @@ section.work > article.connect > img {
     .home_section > article {
         color: #14ccaa;
         height: 22vh;
-        margin: 25vw 1em 0 1em;
+        margin: 25vw 0 0 1em;
         width: 27vw;
     }
 
@@ -499,7 +523,7 @@ section.work > article.connect > img {
 
     /* My work */
     section.work > article {
-        margin: 1em;
+        margin: 0.5em;
     }
 
     section.work > article > p {
@@ -519,8 +543,38 @@ section.work > article.connect > img {
 
     /* CV page, picture settings */
     section.work > img {
-        height: 70%;
-        margin-top: 1em;
-        width: 70%;
+        justify-content: center;
+        margin: 1em -2em 0 -2em;
+        width: 65%;
+    }
+
+    section.work > article.connect {
+        -webkit-display: box;
+        -moz-display: box;
+        -ms-display: flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        margin-top: 5em;
+        width: 30vw;
+    }
+
+    article.connect > a > img {
+        content: url("../img/Linkedin4.png");
+        width: 26vw;
+    }
+
+    article.connect > a > img:hover {
+        content: url("../img/Linkedin3.png");
     }
 }
