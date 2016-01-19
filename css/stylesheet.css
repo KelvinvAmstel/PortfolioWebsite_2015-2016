@@ -54,6 +54,10 @@ h6{
     font-size: 0.75em;
 }
 
+body {
+    width: 100vw;
+}
+
 /* Navigation index*/
 nav.index {
     margin: 1em;
@@ -70,13 +74,13 @@ nav.index > ul > li > a {
 /* Navigation all */
 nav.all {
     background-color: #1b7867;
-    width: 100%;
+    width: 100vw;
 }
 
 nav.all > ul > li {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
@@ -97,9 +101,9 @@ nav.all > ul > li > a:active {
 
 /* Main section */
 main > section {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-wrap: nowrap;
     -moz-flex-wrap: nowrap;
@@ -145,9 +149,9 @@ main > section > article:last-of-type > img {
 
 /* My work */
 section.work {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
@@ -166,12 +170,32 @@ section.work {
 }
 
 section.work > article {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    margin: 0;
+}
+
+section.work > article > a {
     margin: .5em;
     min-width: 300px;
     width: 30vw;
 }
 
-section.work > article > p {
+section.work > article > a > p {
     background-color: rgb(27, 120, 103);
     color: #FFFFFF;
     display: block;
@@ -183,16 +207,28 @@ section.work > article > p {
     width: 30vw;
 }
 
-section.work > article > img {
+section.work > article > a > img {
     height: 192px;
     min-width: 300px;
     width: 30vw;
 }
 
-/* CV page, picture settings */
-section.work > img {
-    height: 100%;
+/* Over mij */
+section.over {
+    width: 100vw;
+}
+
+section.over > article {
+    margin: 0.5em;
+}
+
+section.over > article > img{
+    height: 80%;
     width: 100%;
+}
+
+section.over > article > p{
+    margin: 0.7em 0;
 }
 
 /* Mobile toggle menu */
@@ -216,9 +252,9 @@ nav.all> ul > li > a.active {
 }
 
 section.work > article.connect {
-    -webkit-display: box;
-    -moz-display: box;
-    -ms-display: flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
@@ -337,9 +373,14 @@ article.connect > a > img#ma {
     }
 
     /* My work */
-    section.work > article > p {
+    section.work > article > a > p {
         height: 8.5vh;
         margin-top: -9vh;
+    }
+
+    section.over > article > img{
+        height: 15em;
+        width: 100%;
     }
 
 }
@@ -371,9 +412,9 @@ article.connect > a > img#ma {
     }
 
     nav.all > ul {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         -webkit-justify-content: flex-end;
         -moz-justify-content: flex-end;
@@ -387,14 +428,14 @@ article.connect > a > img#ma {
     }
 
     nav.all > ul > li {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        -webkit-justify-content: flex-end;
-        -moz-justify-content: flex-end;
-        -ms-justify-content: flex-end;
-        justify-content: flex-end;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        justify-content: space-around;
         margin-top: 1em;
     }
 
@@ -406,6 +447,11 @@ article.connect > a > img#ma {
 
     nav.all > ul > li > a:hover {
         border-bottom: 3px solid #14ccaa;
+    }
+
+    section.over > article > img{
+        height: 21em;
+        width: 100%;
     }
 
 }
@@ -427,6 +473,7 @@ article.connect > a > img#ma {
     h2{
         font-size: 3em;
         margin-top: 1em;
+        width: 99vw;
     }
 
     h3{
@@ -448,14 +495,15 @@ article.connect > a > img#ma {
 
     /* Body */
     body{
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         -webkit-flex-wrap: wrap;
         -moz-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        width: 99vw;
     }
 
     /* Header */
@@ -465,6 +513,10 @@ article.connect > a > img#ma {
     }
 
     /* Navigation index*/
+    nav.index {
+    margin: 4em 1em 1em 1em;
+    }
+
     nav.index > ul > li > a {
         font-size: 3.5em;
         transition: all .5s ;
@@ -478,9 +530,9 @@ article.connect > a > img#ma {
 
     /* Main section */
     main {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         height: 50vh;
         margin-left: 31vw;
@@ -531,32 +583,25 @@ article.connect > a > img#ma {
         margin: 0.5em;
     }
 
-    section.work > article > p {
+    section.work > article > a > p {
         height: 32vh;
         margin-top: -32.7vh;
         opacity: 0;
     }
 
-    section.work > article > img {
+    section.work > article > a > img {
         height: 32vh;
     }
 
-    section.work > article:hover > p {
+    section.work > article > a:hover > p {
         opacity: .7;
         transition: opacity .5s;
     }
 
-    /* CV page, picture settings */
-    section.work > img {
-        justify-content: center;
-        margin: 1em -2em 0 -2em;
-        width: 65%;
-    }
-
     section.work > article.connect {
-        -webkit-display: box;
-        -moz-display: box;
-        -ms-display: flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         -webkit-flex-direction: row;
         -moz-flex-direction: row;
@@ -584,5 +629,24 @@ article.connect > a > img#ma {
 
     article.connect > a > img#ma {
         width: 26vw;
+    }
+
+    /* Over mij */
+    section.over {
+        order: 1;
+        width: 100vw;
+    }
+
+    section.over > article {
+        margin: 0.5em;
+    }
+
+    section.over > article > img{
+        height: 80%;
+        width: 100%;
+    }
+
+    section.over > article > p{
+        margin: 0.7em 0;
     }
 }
