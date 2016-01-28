@@ -21,7 +21,7 @@
 
 /* Text markup; size/wieght*/
 p{
-    font-size: 1.25em;
+    font-size: 16pt;
     font-weight: 300;
 }
 
@@ -205,25 +205,25 @@ section.work > article > a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: .5em;
-    min-width: 300px;
+    min-width: 350px;
     width: 30vw;
 }
-
-section.work > article > a > p {
-    background-color: #8ab8ad;
+section.work > article > a > h4{
+    background-color: rgba(138, 171, 173, .7);
     color: #FFFFFF;
     display: block;
     height: 12vh;
-    margin-top: -13vh;
-    opacity: .7;
+    min-height: 4em;
+    margin-top: -4em;
+    padding: .5em;
     position:relative;
-    min-width: 300px;
+    min-width: 350px;
     width: 30vw;
 }
 
 section.work > article > a > img {
-    height: 192px;
-    min-width: 300px;
+    height: 14.5em;
+    min-width: 350px;
     width: 30vw;
 }
 
@@ -247,6 +247,11 @@ section.over > article > img{
     width: 100%;
 }
 
+section.over > article > img.skill {
+    height: 100%;
+    width: 100%;
+}
+
 section.over > article > p{
     margin: 0.7em 0;
 }
@@ -257,7 +262,9 @@ section.cv_kelvin {
 }
 
 img#cv {
-    width: 100%;
+    background-image: url(http://vindkelvin.nl/img/cv.jpg);
+    order: 2;
+    width: 100vw;
 }
 
 /* Mobile toggle menu */
@@ -316,6 +323,24 @@ article.connect > a > img {
 article.connect > a > img#ma {
     margin-top: 1em;
     width: 60vw;
+}
+
+article > a.button {
+    background-color: #8ab8ad;
+    color: #C3E3DB;
+    height: 3em;
+    padding: .5em 1em;
+    margin: 1em 0;
+}
+
+article > a.button:active {
+    background-color: #C3E3DB;
+    color: #8ab8ad;
+}
+
+footer {
+    background-color: #787878;
+    order: 3;
 }
 
 /**************************************************/
@@ -395,9 +420,9 @@ article.connect > a > img#ma {
     }
 
     /* My work */
-    section.work > article > a > p {
+    section.work > article > a > h4 {
         height: 8.5vh;
-        margin-top: -9vh;
+        min-height: 4em;
     }
 
     section.over > article > img{
@@ -530,6 +555,7 @@ article.connect > a > img#ma {
 
     nav.index > ul > li > a {
         font-size: 3.5em;
+        line-height: 100%;
         transition: all .5s ;
     }
 
@@ -549,7 +575,7 @@ article.connect > a > img#ma {
         margin-left: 31vw;
         margin-top: -50vh;
         order: 2;
-        width: 68vw;
+        width: 30vw;
     }
 
     main > section > article {
@@ -592,14 +618,15 @@ article.connect > a > img#ma {
         margin: 0.5em;
     }
 
-    section.work > article > a > p {
-        height: 32vh;
-        margin-top: -32.7vh;
+    section.work > article > a > h4 {
+        background-color: rgba(138, 171, 173, 0);
         opacity: 0;
+        height: 8em;
+        margin-top: -8em;
     }
 
     section.work > article > a > img {
-        height: 32vh;
+        height: 15em;
     }
 
     section.work > article > a > img#li,
@@ -608,9 +635,10 @@ article.connect > a > img#ma {
         height: 140px;
     }
 
-    section.work > article > a:hover > p {
-        opacity: .7;
-        transition: opacity .5s;
+    section.work > article > a:hover > h4 {
+        background-color: rgba(138, 171, 173, .7);
+        opacity: 1;
+        transition: all .5s ;
     }
 
     section.work > article.connect {
@@ -655,7 +683,7 @@ article.connect > a > img#ma {
 
     section.over > article {
         margin: 1em auto;
-        width: 40em;
+        width: 45em;
     }
 
     section.over > article > img{
@@ -663,8 +691,18 @@ article.connect > a > img#ma {
         width: 100%;
     }
 
+    section.over > article > img.skill {
+        margin: 0 3em;
+        height: 100%;
+        width: 80%;
+    }
+
     section.over > article > p{
         margin: .5em 0;
+    }
+
+    section.over > article > article {
+        margin: 1em 0;
     }
 
     img#cv {
@@ -672,13 +710,26 @@ article.connect > a > img#ma {
         margin: 1em auto;
         width: 65vw;
     }
-}
 
-/***************************************************/
-/* Screen width with a minimal size of 1280 pixels */
-/***************************************************/
-@media(min-width: 1500px) {
-    * {
-        font-size: 110%;
+    article > a.button {
+        font-size: 1em;
+        height: 3em;
+        margin-right: 2em;
+    }
+
+    article > a.button:hover {
+        background-color: #C3E3DB;
+        color: #8ab8ad;
+    }
+
+    body#cvbody {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 }
