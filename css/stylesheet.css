@@ -343,6 +343,10 @@ footer {
     order: 3;
 }
 
+img#startup {
+    width: 100vw;
+}
+
 /**************************************************/
 /* Screen width with a minimal size of 480 pixels */
 /* Portrait view of smartphones;                  */
@@ -731,5 +735,12 @@ footer {
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    img#startup {
+        float: left;
+        height: 100%;
+        margin: 0 1em 0 0;
+        width: 15em;
     }
 }
