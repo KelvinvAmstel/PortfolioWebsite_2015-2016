@@ -7,7 +7,6 @@ var linkedin = document.querySelector('#li');
 var github = document.querySelector('#gi');
 var mail = document.querySelector('#ma');
 
-
 if (width.matches) {
     h1.classList.remove('invisible');
     h1.classList.add('menu');

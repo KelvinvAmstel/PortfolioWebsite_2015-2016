@@ -52,6 +52,7 @@ h5{
 
 h6{
     font-size: 0.75em;
+    margin: 0 auto;
 }
 
 body {
@@ -256,13 +257,16 @@ section.over > article > p{
     margin: 0.7em 0;
 }
 
+section.over > article > h4 {
+        font-size: 1.5em;
+}
+
 section.cv_kelvin {
     margin: 1em auto;
     order: 2;
 }
 
 img#cv {
-    background-image: url(http://vindkelvin.nl/img/cv.jpg);
     order: 2;
     width: 100vw;
 }
@@ -328,9 +332,11 @@ article.connect > a > img#ma {
 article > a.button {
     background-color: #8ab8ad;
     color: #C3E3DB;
+    display: block;
     height: 3em;
     padding: .5em 1em;
-    margin: 1em 0;
+    margin: 1em;
+    text-align: center;
 }
 
 article > a.button:active {
@@ -342,6 +348,53 @@ footer {
     height: 7em;
     margin-top: 2em;
     order: 3;
+    width: 100vw;
+}
+
+section.summary {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+section.summary > section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: left;
+    -moz-justify-content: left;
+    -ms-justify-content: left;
+    justify-content: left;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+section.summary > section > img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+section.summary > section > h6 {
+    font-size: 1.5em;
+    margin: 0 0 0 1em;
+}
+
+section.summary > section > p {
+    margin: 1em 1em;
     width: 100vw;
 }
 
@@ -563,13 +616,13 @@ footer {
     }
 
     nav.index > ul > li > a {
-        font-size: 3.5em;
+        font-size: 8vh;
         line-height: 100%;
         transition: all .5s ;
     }
 
     nav.index > ul > li > a:hover {
-        font-size: 4em;
+        font-size: 10vh;
         line-height: 150%;
         transition: all .5s ;
     }
@@ -591,7 +644,12 @@ footer {
         margin-top: 70vh;
     }
 
+    main > section > article > h3 {
+        font-size: 8vh;
+    }
+
     main > section > article > p {
+        font-size: 3vh;
         width: 40vw;
     }
 
@@ -609,12 +667,18 @@ footer {
         width: 27vw;
     }
 
-    .home_section > article > h3,
+    .home_section > article > h3{
+        color: #C3E3DB;
+        font-size: 8vh;
+        text-align: right;
+    }
     .home_section > article > p {
         color: #C3E3DB;
+        font-size: 3vh;
         text-align: right;
     }
     .home_section > article > img {
+        height: 50vh;
         margin-left: 80vw;
     }
 
@@ -715,12 +779,13 @@ footer {
     }
 
     img#cv {
-        height: 100%;
-        margin: 1em auto;
+        height: 70em;
         width: 65vw;
+        margin: 1em auto;
     }
 
     article > a.button {
+        display: inline-block;
         font-size: 1em;
         height: 3em;
         margin-right: 2em;
