@@ -150,7 +150,7 @@ main > section > article {
 }
 
 /* My work */
-section.work {
+section.work, section.contact {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -171,7 +171,7 @@ section.work {
     order: 2;
 }
 
-section.work > article {
+section.work > article, section.contact > article {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -192,7 +192,7 @@ section.work > article {
     width: 100vw;
 }
 
-section.work > article > a {
+section.work > article > a, section.contact > article > a {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -209,28 +209,27 @@ section.work > article > a {
     min-width: 350px;
     width: 30vw;
 }
-section.work > article > a > h4{
+section.work > article > a > h4, section.contact > article > a > h4 {
     background-color: rgba(138, 171, 173, .7);
     color: #FFFFFF;
     display: block;
     height: 12vh;
     min-height: 4em;
-    margin-top: -4em;
     padding: .5em;
     position:relative;
     min-width: 350px;
     width: 30vw;
 }
 
-section.work > article > a > img {
+section.work > article > a > img, section.contact > article > a > img {
     height: 14.5em;
     min-width: 350px;
     width: 30vw;
 }
 
-section.work > article > a > img#li,
-section.work > article > a > img#gi,
-section.work > article > a > img#ma {
+section.contact > article > a > img#li,
+section.contact > article > a > img#gi,
+section.contact > article > a > img#ma {
     height: 140px;
 }
 
@@ -261,7 +260,7 @@ section.over > article > h4 {
         font-size: 1.5em;
 }
 
-section.cv_kelvin {
+section.cv_kelvin2 {
     margin: 1em auto;
     order: 2;
 }
@@ -294,7 +293,7 @@ nav.all> ul > li > a.active {
     width: 100vw;
 }
 
-section.work > article.connect {
+section.contact > article.connect {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -333,7 +332,7 @@ article > a.button {
     background-color: #8ab8ad;
     color: #C3E3DB;
     display: block;
-    height: 3em;
+    height: 32.5m;
     padding: .5em 1em;
     margin: 1em;
     text-align: center;
@@ -560,34 +559,34 @@ section.summary > section > p {
 
     /* Text markup; size/wieght*/
     p{
-        font-size: 1.125em;
+        font-size: 113%;
     }
 
     h1{
-        font-size: 3em;
+        font-size: 300%;
     }
 
     h2{
-        font-size: 3em;
+        font-size: 300%;
         margin-top: 1em;
         width: 99vw;
     }
 
     h3{
-        font-size: 2.5em;
+        font-size: 250%;
         font-weight: 400;
     }
 
     h4{
-        font-size: 1.875em;
+        font-size: 187%;
     }
 
     h5{
-        font-size: 1.625em;
+        font-size: 162%;
     }
 
     h6{
-        font-size: 1.25em;
+        font-size: 125%;
     }
 
     /* Body */
@@ -683,29 +682,29 @@ section.summary > section > p {
     }
 
     /* My work */
-    section.work {
+    section.work, section.contact {
         margin-top: -1em;
     }
 
-    section.work > article {
+    section.work > article, section.contact > article {
         margin: 0.5em;
     }
 
-    section.work > article > a > h4 {
+    section.work > article > a > h4{
         background-color: rgba(138, 171, 173, 0);
         opacity: 0;
-        height: 8em;
-        margin-top: -8em;
+        height: 40vh;
+        margin-top: -40vh;
     }
 
-    section.work > article > a > img {
-        height: 15em;
+    section.work > article > a > img{
+        height: 40vh;
     }
 
-    section.work > article > a > img#li,
-    section.work > article > a > img#gi,
-    section.work > article > a > img#ma {
-        height: 140px;
+    section.contact > article > a > img#li,
+    section.contact > article > a > img#gi,
+    section.contact > article > a > img#ma {
+        height: 20vh;
     }
 
     section.work > article > a:hover > h4 {
@@ -714,7 +713,7 @@ section.summary > section > p {
         transition: all .5s ;
     }
 
-    section.work > article.connect {
+    section.contact > article.connect {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -756,11 +755,11 @@ section.summary > section > p {
 
     section.over > article {
         margin: 1em auto;
-        width: 45em;
+        width: 55vw;
     }
 
     section.over > article > img{
-        height: 16em;
+        height: 100%;
         width: 100%;
     }
 
@@ -779,7 +778,7 @@ section.summary > section > p {
     }
 
     img#cv {
-        height: 70em;
+        height: 100%;
         width: 65vw;
         margin: 1em auto;
     }
@@ -787,13 +786,14 @@ section.summary > section > p {
     article > a.button {
         display: inline-block;
         font-size: 1em;
-        height: 3em;
+        height: 2.5em;
         margin-right: 2em;
     }
 
     article > a.button:hover {
         background-color: #C3E3DB;
         color: #8ab8ad;
+        transition: all .5s;
     }
 
     body#cvbody {
@@ -812,5 +812,10 @@ section.summary > section > p {
         height: 100%;
         margin: 0 1em 0 0;
         width: 15em;
+    }
+
+    .cv_kelvin2 > article {
+        margin: 2em auto;
+        width: 58vw;
     }
 }
