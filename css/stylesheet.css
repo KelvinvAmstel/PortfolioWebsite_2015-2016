@@ -555,7 +555,7 @@ section.summary > section > p {
 /***************************************************/
 /* Screen width with a minimal size of 1280 pixels */
 /***************************************************/
-@media (min-width: 1280px){
+@media (min-width: 1050px){
 
     /* Text markup; size/wieght*/
     p{
